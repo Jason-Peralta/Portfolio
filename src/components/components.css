@@ -1,0 +1,7 @@
+/**
+ * Overwrites the shards react styling to make sure all headers renders in white text so that it's visible in dark mode.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+}
