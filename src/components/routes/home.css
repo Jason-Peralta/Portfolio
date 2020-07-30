@@ -1,0 +1,10 @@
+.site-layout-content {
+    background: black;
+    padding: 2000px;
+    header: 100%;
+    width: 100%;
+}
+
+.menuitem{
+    background-color: black;
+}

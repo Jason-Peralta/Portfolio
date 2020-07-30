@@ -1,8 +1,9 @@
 import React from 'react';
 import './components.css';
-import Home from "./home.js";
-import About from "./about.js"
-import Contact from "./contact.js"
+import Home from "./routes/home.js";
+import About from "./routes/about.js"
+import Contact from "./routes/contact.js"
+import Resume from "./routes/resume.js"
 import {
     BrowserRouter as Router,
     Switch,
@@ -22,7 +23,7 @@ export default function PageRouter() {
     return (
             <Router basename={"/"}>
                 <Switch>
-
+                    <Route exact path="/resume" component={Resume}/>
                     <Route exact path="/aboutme" component={About}/>
                     <Route exact path="/contact" component={Contact}/>
                     <Route path={"/"} component={Home}/>
